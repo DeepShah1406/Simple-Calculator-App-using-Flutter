@@ -1,27 +1,44 @@
-import 'package:flutter/material.dart';
+class Btn {
+  static const String del = "D";
+  static const String clr = "C";
+  static const String per = "%";
+  static const String multiply = "×";
+  static const String divide = "÷";
+  static const String add = "+";
+  static const String subtract = "-";
+  static const String calculate = "=";
+  static const String dot = ".";
 
-//Creating Stateless Widget for buttons
-class MyButton extends StatelessWidget
-{
-  // declaring variables
-  final color;
-  final textColor;
-  final String buttonText;
-  final buttontapped;
+  static const String n0 = "0";
+  static const String n1 = "1";
+  static const String n2 = "2";
+  static const String n3 = "3";
+  static const String n4 = "4";
+  static const String n5 = "5";
+  static const String n6 = "6";
+  static const String n7 = "7";
+  static const String n8 = "8";
+  static const String n9 = "9";
 
-  //Constructor
-  const MyButton({super.key, this.color, this.textColor, required this.buttonText, this.buttontapped});
-
-  @override
-  Widget build(BuildContext context)
-  {
-    TextStyle ts = TextStyle(color: textColor, fontSize: 25, fontWeight: FontWeight.bold);
-    Text txt = Text(buttonText, style: ts);
-    Center cnt = Center(child: txt);
-    Container ct = Container(color: color, child: cnt);
-    ClipRRect crr = ClipRRect(child: ct);
-    Padding pd = Padding(padding: const EdgeInsets.all(0.2), child: crr);
-    GestureDetector gd = GestureDetector(onTap: buttontapped, child: pd);
-    return gd;
-  }
+  static const List<String> buttonValues = [
+    del,
+    clr,
+    per,
+    multiply,
+    n7,
+    n8,
+    n9,
+    divide,
+    n4,
+    n5,
+    n6,
+    subtract,
+    n1,
+    n2,
+    n3,
+    add,
+    n0,
+    dot,
+    calculate,
+  ];
 }

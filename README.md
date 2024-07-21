@@ -1,4 +1,4 @@
-# Simple Calculator App
+# ***Simple Calculator App***
 
 A Flutter project.
 
@@ -15,7 +15,7 @@ This project presents a simple calculator application developed using the Flutte
 
 ## Screenshot
 
-![Calculator Screenshot](assets/CalculatopApp_screenshot.png)
+<img src="assets/calculator_screenshot.png" width="50%" alt="Calculator Screenshot" />
 
 ## Code Overview
 
@@ -35,7 +35,7 @@ The 'calculator_screen.dart' file contains the main logic and UI components for 
 
 ### Prerequisites
 
-To run this project, you need to have Flutter installed on your machine. For installation instructions, refer to the official Flutter documentation.
+To run this project, you need to have Flutter installed on your machine. For installation instructions, refer to the [official Flutter documentation](https://docs.flutter.dev/).
 
 ## Usage
 
@@ -43,7 +43,7 @@ Once the application is running, you can use the calculator to perform basic ari
 
 ## License
 
-This project is licensed under the MIT License. See the LICENSE file for more details.
+This project is licensed under the MIT License. See the [LICENSE](https://github.com/DeepShah1406/SCT_AD_1/blob/master/LICENSE) file for more details.
 
 ## Acknowledgements
 

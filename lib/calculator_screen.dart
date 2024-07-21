@@ -97,14 +97,24 @@ class CalculatorScreenState extends State<CalculatorScreen> {
     }
 
     setState(() {
-      number1 = result.toStringAsPrecision(3);
+      // Format result to avoid scientific notation
+      number1 = result.toStringAsFixed(result.truncateToDouble() == result ? 0 : 2);
 
+      // Remove trailing ".0" if present
       if (number1.endsWith(".0")) {
         number1 = number1.substring(0, number1.length - 2);
       }
 
       operand = "";
       number2 = "";
+      // number1 = result.toStringAsPrecision(3);
+      //
+      // if (number1.endsWith(".0")) {
+      //   number1 = number1.substring(0, number1.length - 2);
+      // }
+      //
+      // operand = "";
+      // number2 = "";
     });
   }
 
@@ -156,7 +166,7 @@ class CalculatorScreenState extends State<CalculatorScreen> {
   // #############
   // appends value to the end
   void appendValue(String value) {
-    // number1 operand number2
+    // number1 opernad number2
     // 234       +      5343
 
     // if is operand and not "."

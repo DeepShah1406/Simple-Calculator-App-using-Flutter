@@ -15,7 +15,7 @@ This project presents a simple calculator application developed using the Flutte
 
 ## Screenshot
 
-<img src="assets/CalculatopApp_screenshot.png" width="50%" alt="Calculator Screenshot" />
+<img src="assets/CalculatopApp_screenshot.png" width="30%" alt="Calculator Screenshot" />
 
 ## Code Overview
 
